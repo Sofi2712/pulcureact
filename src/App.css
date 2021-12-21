@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar li {
+  color: #844E5F;
+  display: inline-block;
+  margin: 0 1.5rem;
+  position: relative;
+  font-size: 2.5rem;
+}
