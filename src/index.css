@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F2E1C4;
+  flex-direction: row;
+  display: flex;
 }
 
 code {
@@ -16,10 +18,10 @@ code {
 header {
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   font-weight: bold;
   text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Navbar {
@@ -28,6 +30,7 @@ header {
   margin: 0 1.5rem;
   position: relative;
   font-size: 1rem;
+  flex-direction: row;
 }
 
 .Titulo {
@@ -35,4 +38,8 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  flex-direction: row;
 }
+
+
+.App {color: black;}
