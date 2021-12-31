@@ -1,9 +1,27 @@
-import React from "react"
+import './ItemListContainer.css'
+import ItemList from './ItemList'
+import { useState , useEffect } from 'react'
+import { getFetch } from '../../helpers/mock'
 
-const ItemListContainer = (props) => {
+
+function ItemListContainer({ greeting }) {
+    
+    const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
+
+
+    useEffect(() => {
+        getFetch
+        .then(resp => setProductos(resp))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
+
+    }, [])
+
     return (
-        <div>
-            <h1>{props.greeting}</h1>
+        <div className='divItemListContainer'>
+            <h1 className='saludo'>{greeting}</h1>
+            { loading ? <h3>Aguarde unos segundos, la página esta cargando</h3> : <ItemList productos={productos} /> }
         </div>
     )
 }

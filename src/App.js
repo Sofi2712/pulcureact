@@ -1,15 +1,15 @@
 import React from "react"
 import ItemListContainer from "./component/ItemListContainer/ItemListContainer";
-import Navbar from "./component/Navbar"
-import ItemCount from "./component/ItemCount";
+import NavBar from "./component/NavBar"
+
+
 
 
 const App = () =>{
   return (
     <div className="App">
-      <Navbar />
+      <NavBar />
       <ItemListContainer greeting="Bienvenidos a Pulcuwines"/>
-      <ItemCount min={1} max={20} />
     </div>
   );
 }

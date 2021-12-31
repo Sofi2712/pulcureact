@@ -1,0 +1,22 @@
+.itemCount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    width: auto;
+}
+
+.buttonItemCount {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: #212529;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.h3Counter {
+    margin: 0 2rem;
+}

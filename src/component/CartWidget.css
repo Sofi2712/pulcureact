@@ -1,0 +1,7 @@
+.cartWidget {
+    width: 1.5rem;
+    height: auto;
+    color:  #844E5F;
+    display: flex;
+    flex-direction: row;
+}
