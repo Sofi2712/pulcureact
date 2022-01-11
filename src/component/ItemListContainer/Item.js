@@ -2,18 +2,20 @@ import React from 'react'
 import { Card } from "react-bootstrap"
 import { Button } from "react-bootstrap" 
 import ItemCount from "./ItemCount"
+import './Item.css';
 
 function Item({ nombre, imagen, precio, descripcion, stock }) {
 
     return (
 
-        <div className="divItem">
+        <div className="item">
             <Card className='cardItem'>
-                <Card.Img variant="top" src="#" alt={imagen} />
+                <Card.Img variant="top" src={imagen} alt={nombre} className='imagenes' />
                 <Card.Body>
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text>
-                        {descripcion}
+                        <p>{descripcion}</p>
+                        <p>${precio}</p>
                     </Card.Text>
                     <ItemCount stock={stock}/>
                     <div className='divButtonCardItem'>

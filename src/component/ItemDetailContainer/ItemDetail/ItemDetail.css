@@ -1,0 +1,31 @@
+.divDetail {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.imgDetail {
+    margin-right: 1rem;
+}
+
+.pDescripcionDetail {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.precioDetail {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.divButtonAgregarAlCarritoDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonAgregarAlCarritoDetail {
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+.divItem {
+    width: 20rem;
+    height: 38rem;
+    margin: 1rem 0.125rem;
+}
+
+
+.card-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.buttonCardItem {
+    width: 10rem;
+}
+
+.divButtonCardItem {
+    flex-direction: column;
+    align-self: center;
+}
+
+.imagenes{
+    width: 12rem;
+    height: 13rem;
+}
