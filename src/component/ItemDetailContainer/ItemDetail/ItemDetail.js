@@ -13,7 +13,7 @@ function ItemDetail({ producto }) {
                 <h4 className='precioDetail'>Precio: ${producto.precio}</h4>
                 <ItemCount />
                 <div className='divButtonAgregarAlCarritoDetail'>
-                    <button className='buttonAgregarAlCarritoDetail'>Agregar</button>
+                    <button className='buttonAgregarAlCarritoDetail'>Agregar al carrito</button>
                 </div>
             </div>
             

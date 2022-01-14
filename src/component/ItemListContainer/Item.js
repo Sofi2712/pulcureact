@@ -1,25 +1,22 @@
-import React from 'react'
+import './Item.css';
 import { Card } from "react-bootstrap"
 import { Button } from "react-bootstrap" 
 import ItemCount from "./ItemCount"
-import './Item.css';
+import { Link } from 'react-router-dom'
 
-function Item({ nombre, imagen, precio, descripcion, stock }) {
+function Item({ id, nombre, imagen, precio, stock }) {
 
     return (
 
-        <div className="item">
+        <div className="divItem">
             <Card className='cardItem'>
                 <Card.Img variant="top" src={imagen} alt={nombre} className='imagenes' />
                 <Card.Body>
                     <Card.Title>{nombre}</Card.Title>
-                    <Card.Text>
-                        <p>{descripcion}</p>
-                        <p>${precio}</p>
-                    </Card.Text>
+                    <Card.Text className='pCardPrecio'>${precio}</Card.Text>
                     <ItemCount stock={stock}/>
                     <div className='divButtonCardItem'>
-                        <Button variant="dark" className='buttonCardItem'>Agregar</Button>
+                        <Link to={`/item/${id}`}><Button variant="dark" className='buttonCardItem'>Detalle del producto</Button></Link>
                     </div>
                 </Card.Body>
             </Card>

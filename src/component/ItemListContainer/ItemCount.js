@@ -14,9 +14,9 @@ function ItemCount({ stock }) {
     }
 
     const handleIncrement = () => {
-       
+    
         counter < stock ? setCounter(prev => prev + 1) : console.log('Llegó al máximo de productos')
-       
+    
     }
 
 
