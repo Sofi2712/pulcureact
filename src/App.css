@@ -1,25 +1,4 @@
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-} 
 
-
-header {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-weight: bold;
-  text-align: center;
+.App {
+  background-color: #F8F9FA;
 }
-
-body {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
-.App {color: black;}
-*/

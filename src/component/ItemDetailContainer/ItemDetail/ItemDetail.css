@@ -20,12 +20,19 @@
     margin-bottom: 1rem;
 }
 
-.divButtonAgregarAlCarritoDetail {
+
+.divButtonsDetail {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.buttonAgregarAlCarritoDetail {
-    align-items: center;
+.buttonSeguirCompra {
+    margin-bottom: 1rem;
+    width: 11rem;
+}
+
+.buttonTerminarCompra {
+    width: 11rem;
 }

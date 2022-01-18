@@ -3,7 +3,7 @@ import ItemList from './ItemList'
 import { useState , useEffect } from 'react'
 import { getFetch } from '../../helpers/mock'
 import { useParams } from 'react-router-dom'
-
+import Spinner from './Spinner'
 
 
 function ItemListContainer({ greeting }) {
@@ -36,10 +36,9 @@ function ItemListContainer({ greeting }) {
     return (
         <div className='divItemListContainer'>
             <h1 className='saludo'>{greeting}</h1>
-            { loading ? <h3>Aguarde unos segundos, la página esta cargando</h3> : <ItemList productos={productos} /> }
+            { loading ? <Spinner /> : <ItemList productos={productos} /> }
         </div>
     )
 }
 
 export default ItemListContainer
-

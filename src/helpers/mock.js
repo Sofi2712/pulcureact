@@ -11,9 +11,9 @@ export const getFetch = new Promise((resolve, reject) => {
     
     if(true){
         setTimeout(() => {
-            resolve(productos)
+            resolve(productos);
         }, 1500)
     }else{
-        reject('err')
+        reject('error');
     }
 })

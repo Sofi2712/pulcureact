@@ -1,11 +1,18 @@
+.divItemCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .itemCount {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #212529;
     border-radius: 0.25rem;
-    width: auto;
+    width: 20rem;
     margin-bottom: 1rem;
 }
 

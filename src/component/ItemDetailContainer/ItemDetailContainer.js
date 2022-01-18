@@ -1,7 +1,7 @@
 import { useState , useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import { getFetch } from '../../helpers/mock'
-import ItemDetail from "./ItemDetail/ItemDetail"
+import { useParams } from 'react-router-dom'
+import ItemDetail from '../ItemDetailContainer/ItemDetail/ItemDetail'
 
 
 function ItemDetailContainer() {

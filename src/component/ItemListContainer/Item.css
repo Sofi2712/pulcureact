@@ -4,23 +4,24 @@
     margin: 1rem 0.125rem;
 }
 
-
 .card-body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    height: 11rem;
+}
+
+.pCardPrecio {
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align:center
 }
 
 .buttonCardItem {
-    width: 10rem;
+    width: 12rem;
 }
 
 .divButtonCardItem {
     flex-direction: column;
-    align-self: center;
 }
 
-.imagenes{
-    width: 12rem;
-    height: 13rem;
-}
