@@ -12,7 +12,7 @@ function NavBar() {
 
     return (
         <div>
-            <Navbar bg="light" variant="light">
+            <Navbar bg="white" variant="white">
                 <a href="#inicio"><img src={logo} alt="logo" className="logo" /></a>
                 <Container>
                     <Nav>

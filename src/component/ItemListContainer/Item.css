@@ -9,6 +9,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     height: 11rem;
+    text-align: center;
 }
 
 .pCardPrecio {
@@ -19,6 +20,7 @@
 
 .buttonCardItem {
     width: 12rem;
+    align-items: center;
 }
 
 .divButtonCardItem {

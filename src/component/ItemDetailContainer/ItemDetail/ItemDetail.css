@@ -1,22 +1,26 @@
 .divDetail {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     margin: 1rem;
 }
 
 .imgDetail {
     margin-right: 1rem;
+    width: 30rem;
 }
 
 .pDescripcionDetail {
     margin-top: 7rem;
     margin-bottom: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .precioDetail {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -30,9 +34,10 @@
 
 .buttonSeguirCompra {
     margin-bottom: 1rem;
-    width: 11rem;
+    width: 8rem;
 }
 
 .buttonTerminarCompra {
-    width: 11rem;
+    width: 8rem;
 }
+
