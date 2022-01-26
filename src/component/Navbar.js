@@ -6,9 +6,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
+import {useCartContext} from '../context/CartContext'
 
 
 function NavBar() {
+
+    const { cantidadItems } = useCartContext()
 
     return (
         <div>
@@ -27,9 +30,13 @@ function NavBar() {
                                 <Link to='/categoria/Espumantes'>Espumantes</Link>
                             </li>
                             <li>
-                                <Link to='/Cart'><CartWidget /></Link>
                             </li>
+                            <Link to={`/cart`} className='cartNavBar'>
+                            <CartWidget />
+                                {cantidadItems() > 0 ? <div className='globoItems'> {cantidadItems()} </div> : <div></div>}
+                            </Link>
                         </ul>
+                    
                     </Nav>
                 </Container>
             </Navbar>

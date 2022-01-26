@@ -26,22 +26,38 @@ export const CartContextProvider = ({ children }) => {
         }else{
             setCartList([...cartList, items])
         }
-
     }
 
-    function removerDelCarrito(params) {
-        
+    const borrarItem = (id) => {
+
+        setCartList(cartList.filter((producto) => producto.id !== id));
     }
 
-    function vaciarCarrito () {
+    const vaciarCarrito = () => {
         setCartList([])
+    }
+
+    const precioTotal = () => {
+        let total = 0
+        cartList.forEach((producto) => {
+            total += producto.precio * producto.cantidad;
+        });
+
+        return total;
+    }
+
+    const cantidadItems = () => {
+        return cartList.reduce((prev, curr) => prev = prev + curr.cantidad, 0)
     }
 
     return (
         <CartContext.Provider value={{
             cartList,
             agregarAlCarrito,
-            vaciarCarrito
+            borrarItem,
+            vaciarCarrito,
+            precioTotal,
+            cantidadItems
         }}>
             {children}
         </CartContext.Provider>

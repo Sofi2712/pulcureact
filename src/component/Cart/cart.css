@@ -1,0 +1,43 @@
+.carritoVacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.filaCart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.precioTotal {
+    font-size: 1.2rem;
+}
+
+.vaciarCarrito {
+    width: 15rem;
+}
+
+.finalCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

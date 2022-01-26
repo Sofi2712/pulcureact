@@ -44,3 +44,15 @@ body {
             padding: 30px;
             
         }
+
+        .cartNavBar {
+            margin-left: 4rem;
+            margin-right: 3rem;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .globoItems {
+            font-size: 1rem;
+            margin-left: 0.3rem;
+        }
