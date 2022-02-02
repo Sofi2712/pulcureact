@@ -7,6 +7,8 @@ import Cart from "./component/Cart/Cart"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartContextProvider } from './context/CartContext';
+import OrderProcessed from "./component/OrderProcessed/OrderProcessed";
+import CheckOut from "./component/CheckOut/CheckOut";
 
 
 
@@ -22,6 +24,8 @@ const App = () =>{
         <Route exact path='/categoria/:categoriaId' element={<ItemListContainer />} />
         <Route exact path='/Item/:detalleId' element={<ItemDetailContainer />} />
         <Route exact path='/cart' element={<Cart />} />
+        <Route exact path='/cart/checkOut' element={<CheckOut />} />
+        <Route exact path='/cart/orderProcessed' element={<OrderProcessed />} />
       </Routes>
       </BrowserRouter>
       </CartContextProvider>

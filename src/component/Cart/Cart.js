@@ -11,7 +11,7 @@ function Cart() {
         <>
             {cartList.length === 0 ? (
                 <div className="carritoVacio">
-                    <h2>El carrito está vacío</h2>
+                    <h2>Su carrito se encuentra vacío</h2>
                     <Link to="/">
                         <Button variant="dark">Ir a la tienda</Button>
                     </Link>
@@ -31,6 +31,9 @@ function Cart() {
                     )} 
                     <div className="finalCart">
                         <p className="precioTotal">Precio total ${precioTotal()} </p>
+                        <Link to={'/cart/checkOut'}>
+                            <Button variant="dark" className='vaciarCarrito'>Comprar</Button>
+                        </Link>
                         <Button variant="outline-dark" className='vaciarCarrito' onClick={vaciarCarrito}>Vaciar carrito</Button>
                     </div>                      
                 </div>
@@ -38,5 +41,6 @@ function Cart() {
         </>
     );
 };
+
 
 export default Cart
