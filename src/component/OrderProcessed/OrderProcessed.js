@@ -4,7 +4,7 @@ function OrderProcessed({ idOrder }) {
     
     return (
         <div>
-            <p>El id de la orden generada es: {idOrder}</p> 
+            <p>El id de la orden es: {idOrder}</p> 
         </div>
     );
 }

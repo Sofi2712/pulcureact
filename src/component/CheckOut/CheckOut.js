@@ -31,7 +31,7 @@ function CheckOut() {
         order.buyer = formData 
         order.total = precioTotal();
 
-        order.items = cartList.map(cartItem => {
+        order.Items = cartList.map(cartItem => {
             const id = cartItem.id;
             const nombre = cartItem.nombre;
             const precio = cartItem.precio * cartItem.cantidad;
@@ -43,12 +43,12 @@ function CheckOut() {
         
         const db = getFirestore()
 
-        const oredenCollection = collection(db, 'orders')
-        await addDoc(oredenCollection, order) 
+        const ordenCollection = collection(db, 'orders')
+        await addDoc(ordenCollection, order) 
         .then(resp => setIdOrder(resp.id))
         .catch(err => console.log(err))
         
-        const queryCollection = collection(db, 'items')
+        const queryCollection = collection(db, 'Items')
         const queryActulizarStock = query(
             queryCollection, 
             where( documentId() , 'in', cartList.map(it => it.id))          
@@ -58,7 +58,7 @@ function CheckOut() {
         
         await getDocs(queryActulizarStock)
         .then(resp => resp.docs.forEach(res => batch.update(res.ref, {
-                stock: res.data().stock - cartList.find(item => item.id === res.id).cantidad
+                stock: res.data().stock - cartList.find(Item => Item.id === res.id).cantidad
             }) 
         ))
         .catch(err => console.log(err))
