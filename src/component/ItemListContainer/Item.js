@@ -14,7 +14,7 @@ function Item({ id, nombre, imagen, precio, stock }) {
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text className='pCardPrecio'>${precio}</Card.Text>
                     <div className='divButtonCardItem'>
-                        <Link to={`/item/${id}`}><Button variant="light" className='buttonCardItem'>Detalle del producto</Button></Link>
+                        <Link to={`/item/${id}`}><Button variant="light" className='buttonCardItem'>Mas información</Button></Link>
                     </div>
                 </Card.Body>
             </Card>

@@ -1,13 +1,14 @@
-.divDetail {
+.divItemDetail {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: 1rem;
+    background-color: #844E5F;
 }
 
-.imgDetail {
+.imgItemDetail {
     margin-right: 1rem;
     width: 30rem;
 }
@@ -25,7 +26,7 @@
 }
 
 
-.divButtonsDetail {
+.buttonsDetail {
     display: flex;
     flex-direction: column;
     justify-content: center;

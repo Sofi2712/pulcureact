@@ -11,9 +11,9 @@ function Cart() {
         <>
             {cartList.length === 0 ? (
                 <div className="carritoVacio">
-                    <h2>Su carrito se encuentra vacío</h2>
+                    <h2>No hay productos agregados al carrito</h2>
                     <Link to="/">
-                        <Button variant="dark">Ir a la tienda</Button>
+                        <Button variant="light">Ir a la tienda</Button>
                     </Link>
                 </div>
             ) : (

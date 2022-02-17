@@ -6,6 +6,7 @@ import Spinner from './Spinner'
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 
+
 function ItemListContainer({ greeting }) {
     
     const [productos, setProductos] = useState([])
@@ -24,7 +25,7 @@ function ItemListContainer({ greeting }) {
                 where('categoria', '==', categoriaId)
             )
             getDocs(queryCollectionCategoria)
-            .then(resp => setProductos( resp.docs.map(prod => ({ id: prod.id, ...prod.data() }) ) ))
+            .then(resp => setProductos( resp.docs.map(prod => ({ key: prod.id, ...prod.data() }) ) ))
             .catch(err => console.log(err))
             .finally(() => setLoading(false))
 
@@ -33,7 +34,7 @@ function ItemListContainer({ greeting }) {
             const db = getFirestore()
             const queryCollection = query(collection(db, 'Items'))
             getDocs(queryCollection)
-            .then(resp => setProductos( resp.docs.map(prod => ({ id: prod.id, ...prod.data() }) ) ))
+            .then(resp => setProductos( resp.docs.map(prod => ({ key: prod.id, ...prod.data() }) ) ))
             .catch(err => console.log(err))
             .finally(() => setLoading(false))
 

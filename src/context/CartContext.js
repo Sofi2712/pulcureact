@@ -11,20 +11,20 @@ export const CartContextProvider = ({ children }) => {
 
     const [cartList, setCartList] = useState([])
 
-    function agregarAlCarrito (items) {
+    function agregarAlCarrito (Items) {
 
-        const indice = cartList.findIndex(i => i.id === items.id)
+        const indice = cartList.findIndex(i => i.id === Items.id)
 
         if (indice > -1) {
 
             const cantidadVieja=cartList[indice].cantidad
-            let cantidadNueva= cantidadVieja + items.cantidad
+            let cantidadNueva= cantidadVieja + Items.cantidad
             cartList[indice].cantidad = cantidadNueva
             let arrAux = [...cartList]
             setCartList(arrAux)
 
         }else{
-            setCartList([...cartList, items])
+            setCartList([...cartList, Items])
         }
     }
 

@@ -2,6 +2,7 @@
     width: 20rem;
     height: 38rem;
     margin: 1rem 0.125rem;
+    color: #844E5F;
 }
 
 .card-body {
@@ -15,7 +16,8 @@
 .pCardPrecio {
     margin-bottom: 0;
     font-size: 1rem;
-    text-align:center
+    text-align:center;
+    font-weight: 700;
 }
 
 .buttonCardItem {

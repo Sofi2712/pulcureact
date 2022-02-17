@@ -5,7 +5,7 @@ function ItemList({ productos }) {
 
     return (
         <div className='divItemList'>
-            { productos.map(prod => <Item key={prod.id} id={prod.id} nombre={prod.nombre} imagen={prod.img} precio={prod.precio} stock={prod.stock} />) }
+            { productos.map(prod => <Item key={prod.id} id={prod.key} nombre={prod.nombre} imagen={prod.img} precio={prod.precio} stock={prod.stock} />) }
         </div>
     )
 }
