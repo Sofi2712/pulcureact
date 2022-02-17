@@ -51,14 +51,14 @@ function CheckOut() {
         const queryCollection = collection(db, 'Items')
         const queryActulizarStock = query(
             queryCollection, 
-            where( documentId() , 'in', cartList.map(it => it.id))          
+            where( documentId() , 'in', cartList.map(it => it.key))          
         ) 
 
         const batch = writeBatch(db)      
         
         await getDocs(queryActulizarStock)
         .then(resp => resp.docs.forEach(res => batch.update(res.ref, {
-                stock: res.data().stock - cartList.find(Item => Item.id === res.id).cantidad
+                stock: res.data().stock - cartList.find(Item => Item.key === res.id).cantidad
             }) 
         ))
         .catch(err => console.log(err))

@@ -16,7 +16,7 @@ function ItemDetailContainer() {
         const db = getFirestore()
         const queryProd = doc(db, 'Items', detalleId)
         getDoc(queryProd)
-        .then((resp) => (setProducto({id: resp.id, ...resp.data()})))
+        .then((resp) => (setProducto({key: resp.id, ...resp.data()})))
 
 
     }, [detalleId])

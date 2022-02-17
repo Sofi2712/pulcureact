@@ -7,14 +7,14 @@ import { useCartContext } from '../../../context/CartContext';
 
 function ItemDetail({ producto }) { 
 
-    const { addToCart } = useCartContext()
+    const { agregarAlCarrito } = useCartContext()
     
     const [show, setShow] = useState(true)
 
     const onAdd = (contador) => {
 
         setShow(false)
-        addToCart({...producto, cantidad: contador})
+        agregarAlCarrito({...producto, cantidad: contador})
     }
 
     return (

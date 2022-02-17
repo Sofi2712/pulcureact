@@ -21,7 +21,7 @@ function NavBar() {
                     <Nav>
                         <ul>
                             <li>
-                                <Link to='/inicio'>Inicio</Link>
+                                <Link to='/'>Inicio</Link>
                             </li>
                             <li>
                                 <Link to='/categoria/Blancos'>Vino blanco</Link>
